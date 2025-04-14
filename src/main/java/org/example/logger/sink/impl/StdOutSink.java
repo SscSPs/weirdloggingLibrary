@@ -1,4 +1,4 @@
-package org.example.logger.sink.sync;
+package org.example.logger.sink.impl;
 
 import org.example.logger.Level;
 import org.example.logger.sink.LogMessageSink;
@@ -9,7 +9,7 @@ public class StdOutSink extends LogMessageSink {
     }
 
     private void writeToSelf(Level messageLevel, String message) {
-        if (ignoreMessageAtLevel(messageLevel)){
+        if (ignoreMessageAtLevel(messageLevel)) {
             return;
         }
         System.out.println("StdOutSink - " + message);

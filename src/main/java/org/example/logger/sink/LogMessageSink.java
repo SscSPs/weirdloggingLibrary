@@ -5,9 +5,10 @@ import org.example.logger.Level;
 public abstract class LogMessageSink {
     Level sinkLevel;
 
-    protected LogMessageSink(Level sinkLevel){
+    protected LogMessageSink(Level sinkLevel) {
         this.sinkLevel = sinkLevel;
     }
+
     protected boolean ignoreMessageAtLevel(Level messageLevel) {
         return messageLevel.getLevelInt() < sinkLevel.getLevelInt();
     }

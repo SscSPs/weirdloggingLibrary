@@ -9,11 +9,11 @@ public enum Level {
     ;
     private final int intLevel;
 
-    Level(int intLevel){
+    Level(int intLevel) {
         this.intLevel = intLevel;
     }
 
-    public int getLevelInt(){
+    public int getLevelInt() {
         return intLevel;
     }
 }
